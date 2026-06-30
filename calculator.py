@@ -1,10 +1,14 @@
 def divide(a, b):
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
     return a / b
-
-
-def average(nums):
+    if not nums:
+        raise ValueError("Cannot calculate average of an empty list")
     total = 0
     for n in nums:
+        total += n
+    return total / len(nums)
+    max_val = nums[0]
         total += n
     return total / len(nums)
 
