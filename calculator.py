@@ -1,8 +1,12 @@
 def divide(a, b):
+    if b == 0:
+        return None
     return a / b
 
 
 def average(nums):
+    if not nums:
+        return 0
     total = 0
     for n in nums:
         total += n
