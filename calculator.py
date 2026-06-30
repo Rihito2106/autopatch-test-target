@@ -1,7 +1,11 @@
-def divide(a, b):
+    if b == 0:
+        raise ValueError("Cannot divide by zero.")
     return a / b
-
-
+    if not nums:
+        raise ValueError("Cannot calculate the average of an empty list.")
+    total = 0
+    for n in nums:
+        total += n
 def average(nums):
     total = 0
     for n in nums:
