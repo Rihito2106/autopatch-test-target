@@ -1,7 +1,11 @@
-def divide(a, b):
+    if b == 0:
+        return None
     return a / b
-
-
+    if not nums:
+        return None
+    total = 0
+    for n in nums:
+        total += n
 def average(nums):
     total = 0
     for n in nums:
