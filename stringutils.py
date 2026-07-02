@@ -1,3 +1,6 @@
 def get_initials(name):
     parts = name.split(" ")
-    return parts[0][0] + parts[1][0]
+    if len(parts) < 2:
+        return parts[0][0]
+    else:
+        return parts[0][0] + parts[1][0]
